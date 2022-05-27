@@ -10,7 +10,7 @@ namespace Ejercicio2
            Empleado E1 = new Empleado();
            Empleado E2 = new Empleado();
            Empleado E3 = new Empleado();
-           Empleado EV = new Empleado();
+           Empleado EV = null;
 
            //Carga  Empleado 1 
             E1.Nombre="Luis";

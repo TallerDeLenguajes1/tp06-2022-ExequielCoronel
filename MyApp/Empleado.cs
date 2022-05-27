@@ -19,7 +19,19 @@ namespace Ejercicio2
 
         public int antiguedad()
         {
-            return Math.Abs(Convert.ToInt32(FechaDeIngresoAEmpresa.Year) - Convert.ToInt32(DateTime.Now.Year)); 
+            int add=0;
+            if(DateTime.Now.Year != FechaDeIngresoAEmpresa.Year)
+            {
+                if((DateTime.Now.Month - FechaDeIngresoAEmpresa.Month)>0)
+                {
+                    add=1;
+                } else if(DateTime.Now.Month - FechaDeIngresoAEmpresa.Month == 0 && DateTime.Now.Day - FechaDeIngresoAEmpresa.Day>=0)
+                    {
+                        add=1;
+                    }
+            }
+            
+            return ((DateTime.Now.Year - FechaDeIngresoAEmpresa.Year)+add);
         }
 
         public int edad()
