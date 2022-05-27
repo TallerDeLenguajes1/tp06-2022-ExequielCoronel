@@ -43,10 +43,10 @@ namespace Ejercicio2
         {
             if(Genero=='M' || Genero=='m')
             {
-                return 60-edad();
+                return 65-edad();
             } else if(Genero=='F' || Genero=='f')
                     {
-                        return 65-edad();
+                        return 60-edad();
                     }
             return -99;
         }
